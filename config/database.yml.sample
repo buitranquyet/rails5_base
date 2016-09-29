@@ -1,0 +1,23 @@
+default: &default
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  pool:     5
+
+development:
+  <<: *default
+  database: rails5_dev
+  username: quyet
+  password:
+
+test:
+  <<: *default
+  database: rails5_test
+  username: quyet
+  password:
+
+production:
+  <<: *default
+  database: rails5_production
+  username: xxx
+  password: xxx

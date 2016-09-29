@@ -29,6 +29,10 @@ gem 'toastr-rails'
 gem 'selectize-rails'
 gem 'tinymce-rails'
 
+# 3rd-party services
+gem 'rollbar'
+# gem 'newrelic_rpm'
+
 group :development, :test do
   gem 'pry-rails'
 
@@ -65,4 +69,3 @@ group :test do
   gem 'shoulda-matchers'
   gem 'factory_girl_rails', require: false
 end
-

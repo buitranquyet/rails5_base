@@ -1,0 +1,8 @@
+linters:
+  SpaceInsideHashAttributes:
+    exclude:
+      - 'app/views/layouts/_meta.html.haml'
+  LineLength:
+    max: 120
+    exclude:
+      - 'app/views/layouts/_meta.html.haml'
