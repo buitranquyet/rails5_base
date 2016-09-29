@@ -1,0 +1,4 @@
+- flash.each do |name, msg|
+  - if msg.is_a?(String)
+    :javascript
+      toastr['#{name.to_s == 'notice' ? 'success' : 'error'}']('#{msg}')

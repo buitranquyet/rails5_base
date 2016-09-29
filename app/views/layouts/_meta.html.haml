@@ -1,0 +1,27 @@
+%meta{charset: 'utf-8'}
+%meta{content: 'IE=edge,chrome=1', 'http-equiv' => 'X-UA-Compatible'}
+%meta{content: 'RailsMVP.com', name: 'author'}
+
+%meta{content: 'This is the description', name: 'description'}
+%meta{content: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no', name: 'viewport'}
+
+/ Meta - Facebook OG
+%meta{content: 'This is the description', property: 'og:description'}
+%meta{content: 'http://www.railsmvp.com/app.png', property: 'og:image'}
+%meta{content: 'http://www.railsmvp.com', property: 'og:site_name'}
+%meta{content: 'Leanflix', property: 'og:title'}
+%meta{content: 'website', property: 'og:type'}
+%meta{content: 'http://www.railsmvp.com/', property: 'og:url'}
+
+/ Meta - Twitter
+%meta{content: 'summary_large_image', name: 'twitter:card'}
+%meta{content: 'http://www.railsmvp.com', name: 'twitter:site'}
+%meta{content: '@railsmvp', name: 'twitter:creator'}
+%meta{content: 'This is twitter title', name: 'twitter:title'}
+%meta{content: 'This is the description', name: 'twitter:description'}
+%meta{content: 'http://www.railsmvp.com/icons/meta-twitter.png', name: 'twitter:image'}
+/ Icons
+%link{href: 'icons/favicon.ico', rel: 'shortcut icon'}
+
+- unless Rails.env.production?
+  %meta{content: 'noindex, nofollow', name: 'robots'}
