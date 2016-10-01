@@ -17,6 +17,8 @@ gem 'simple_form'
 gem 'kaminari'
 gem 'friendly_id'
 
+gem 'sitemap_generator'
+
 gem 'sidekiq'
 
 gem 'paperclip'
@@ -32,6 +34,16 @@ gem 'tinymce-rails'
 # 3rd-party services
 gem 'rollbar'
 # gem 'newrelic_rpm'
+
+# Omniauth
+# gem "omniauth"
+# gem "omniauth-twitter"
+# gem "omniauth-facebook"
+# gem "omniauth-linkedin"
+# gem "koala" # facebook API
+# gem "twitter"
+# gem "linkedin"
+# gem "instagram"
 
 group :development, :test do
   gem 'pry-rails'
