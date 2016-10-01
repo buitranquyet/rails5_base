@@ -17,12 +17,14 @@ gem 'simple_form'
 gem 'kaminari'
 gem 'friendly_id'
 
+# SEO
 gem 'sitemap_generator'
+gem 'meta-tags'
 
 gem 'sidekiq'
 
 gem 'paperclip'
-gem 'whenever'
+gem 'whenever', require: false
 gem 'cancancan'
 
 # Front-end/js stuff
@@ -35,7 +37,7 @@ gem 'tinymce-rails'
 gem 'rollbar'
 # gem 'newrelic_rpm'
 
-# Omniauth
+# Social/Omniauth
 # gem "omniauth"
 # gem "omniauth-twitter"
 # gem "omniauth-facebook"
@@ -77,7 +79,10 @@ end
 
 group :test do
   gem 'rspec-rails'
-  gem 'faker'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails', require: false
+  gem 'database_cleaner'
+  gem 'capybara'
+  gem 'simplecov', require: false
+  gem 'faker'
 end
