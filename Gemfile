@@ -72,7 +72,7 @@ group :development do
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
   gem 'capistrano-rails-console'
-  gem 'capistrano-rvm'
+  gem 'capistrano-rbenv'
   # gem 'capistrano-sidekiq' , github: 'seuros/capistrano-sidekiq'
   gem 'capistrano3-puma', github: "seuros/capistrano-puma"
 end

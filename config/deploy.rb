@@ -1,11 +1,11 @@
 lock '3.6.1'
 
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
-
+set :application, 'railsmvp'
+set :repo_url, 'git@github.com:buitranquyet/rails5_base.git'
 # set :deploy_to, '/var/www/my_app_name'
-
 set :puma_init_active_record, true
+set :rbenv_ruby,          '2.3.1'
+set :rbenv_custom_path,   '/etc/rbenv'
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
@@ -28,11 +28,11 @@ set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache',
 # set :keep_releases, 5
 
 namespace :deploy do
-  after :publishing, :restart do
-    on roles :app do
-      invoke 'puma:restart'
-    end
-  end
+  # after :publishing, :restart do
+  #   on roles :app do
+  #     invoke 'puma:restart'
+  #   end
+  # end
 
   # after :publishing, :restart_sidekiq do
   #   on roles :app do
