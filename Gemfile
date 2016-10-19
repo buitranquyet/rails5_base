@@ -57,6 +57,7 @@ group :development, :test do
   gem 'rubocop',              require: false
   gem 'rubocop-rspec',        require: false
   gem 'haml_lint',            require: false
+  gem 'bundler-audit',        require: false
 end
 
 group :development do
@@ -73,8 +74,8 @@ group :development do
   gem 'capistrano-rails'
   gem 'capistrano-rails-console'
   gem 'capistrano-rbenv'
-  # gem 'capistrano-sidekiq' , github: 'seuros/capistrano-sidekiq'
-  gem 'capistrano3-puma', github: "seuros/capistrano-puma"
+  # gem 'capistrano-sidekiq' , git: 'https://github.com/seuros/capistrano-sidekiq.git'
+  gem 'capistrano3-puma', git: "https://github.com/seuros/capistrano-puma.git"
 end
 
 group :test do
