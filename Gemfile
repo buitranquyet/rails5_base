@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.3.1'
+ruby '2.3.3'
 
 gem 'rails', '>= 5.0.0'
 
@@ -25,10 +25,9 @@ gem 'sidekiq'
 
 gem 'paperclip'
 gem 'whenever', require: false
-gem 'cancancan'
 
 # Front-end/js stuff
-gem 'bootstrap', '~> 4.0.0.alpha4'
+gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'toastr-rails'
 gem 'selectize-rails'
 gem 'tinymce-rails'
