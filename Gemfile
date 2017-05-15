@@ -1,25 +1,25 @@
 source 'https://rubygems.org'
-ruby '2.4.0'
+ruby '2.4.1'
 
 gem 'rails', '>= 5.0.0'
 
 gem 'pg'
 gem 'puma'
 
-gem 'sass-rails'
-gem 'uglifier'
-gem 'jquery-rails'
-gem 'turbolinks'
-gem 'haml-rails'
 gem 'devise'
+gem 'haml-rails'
+gem 'jquery-rails'
+gem 'sass-rails'
+gem 'turbolinks'
+gem 'uglifier'
 
-gem 'simple_form'
-gem 'kaminari'
 gem 'friendly_id'
+gem 'kaminari'
+gem 'simple_form'
 
 # SEO
-gem 'sitemap_generator'
 gem 'meta-tags'
+gem 'sitemap_generator'
 
 gem 'sidekiq'
 
@@ -28,9 +28,9 @@ gem 'whenever', require: false
 
 # Front-end/js stuff
 gem 'bootstrap', '~> 4.0.0.alpha6'
-gem 'toastr-rails'
 gem 'selectize-rails'
 gem 'tinymce-rails'
+gem 'toastr-rails'
 
 # 3rd-party services
 gem 'rollbar'
@@ -51,19 +51,19 @@ group :development, :test do
 
   # Code analyzers
   gem 'brakeman',             require: false
+  gem 'bundler-audit',        require: false
+  gem 'haml_lint',            require: false
   gem 'i18n-tasks',           require: false
   gem 'rails_best_practices', require: false
   gem 'rubocop',              require: false
   gem 'rubocop-rspec',        require: false
-  gem 'haml_lint',            require: false
-  gem 'bundler-audit',        require: false
 end
 
 group :development do
-  gem 'web-console'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'web-console'
 
   gem 'letter_opener'
 
@@ -78,11 +78,11 @@ group :development do
 end
 
 group :test do
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'factory_girl_rails', require: false
+  gem 'faker'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
-  gem 'factory_girl_rails', require: false
-  gem 'database_cleaner'
-  gem 'capybara'
   gem 'simplecov', require: false
-  gem 'faker'
 end

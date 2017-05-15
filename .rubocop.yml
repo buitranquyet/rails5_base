@@ -50,9 +50,6 @@ Style/AlignHash:
   EnforcedLastArgumentHashStyle: ignore_implicit
   EnforcedHashRocketStyle: table
 
-Lint/EndAlignment:
-  AlignWith: variable
-
 Style/Documentation:
   Enabled: false
 
