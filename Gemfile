@@ -27,7 +27,7 @@ gem 'paperclip'
 gem 'whenever', require: false
 
 # Front-end/js stuff
-gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bootstrap', '~> 4.0.0.beta'
 gem 'selectize-rails'
 gem 'tinymce-rails'
 gem 'toastr-rails'
@@ -74,7 +74,7 @@ group :development do
   gem 'capistrano-rails-console'
   gem 'capistrano-rbenv'
   # gem 'capistrano-sidekiq' , git: 'https://github.com/seuros/capistrano-sidekiq.git'
-  gem 'capistrano3-puma', git: "https://github.com/seuros/capistrano-puma.git"
+  gem 'capistrano3-puma', git: 'https://github.com/seuros/capistrano-puma.git'
 end
 
 group :test do
