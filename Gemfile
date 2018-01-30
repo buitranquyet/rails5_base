@@ -3,7 +3,7 @@ ruby '2.5.0'
 
 gem 'rails', '>= 5.0.0'
 
-gem 'pg'
+gem 'pg', '~> 0.18'
 gem 'puma'
 
 gem 'devise'
